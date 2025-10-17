@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const box = document.getElementById("chatbox");
 
   if (!toggle || !close || !sendBtn || !userInput || !messages || !box) {
-    console.error("❌ Không tìm thấy phần tử chatbot trong DOM.");
+    console.error("Không tìm thấy phần tử chatbot trong DOM.");
     return;
   }
 
