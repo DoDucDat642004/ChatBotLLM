@@ -74,7 +74,7 @@ def update_vector_db_from_mysql():
         )
         docs.append(Document(page_content=content, metadata={"tourId": tour["tourId"]}))
     db.add_documents(docs)
-    print(f"✅ Đã cập nhật {len(docs)} tour mới vào VectorDB.")
+    print(f"Đã cập nhật {len(docs)} tour mới vào VectorDB.")
 
 
 # while True:
@@ -84,7 +84,7 @@ def update_vector_db_from_mysql():
 
 #     relevant_docs = db.similarity_search_with_score(query, k=3)
 
-#     print("📊 Mức độ tương đồng:")
+#     print("Mức độ tương đồng:")
 #     for doc, score in relevant_docs:
 #         print(f"Score: {score:.4f} → {'Dùng' if score <= SIMILARITY_THRESHOLD else 'Bỏ'}")
 
